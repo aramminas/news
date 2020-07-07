@@ -1,2 +1,0 @@
-# news
-Information site
