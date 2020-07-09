@@ -11,3 +11,342 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Main styles*/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    font-smooth: auto;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #444;
+}
+
+#root {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+
+.header-main-content {
+    flex: 0 1 auto;
+}
+
+.main-content {
+    flex: 1 1 auto;
+}
+
+.footer-main-content {
+    flex: 0 1 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Source Code Pro", monospace;
+}
+
+h2 {
+    margin: 5px 0;
+    color: white;
+}
+
+p {
+    margin: 200px 0;
+}
+
+.ff {
+    font-family: "Comic Sans MS", cursive, sans-serif, "Source Code Pro", monospace;
+}
+
+.fw {
+    font-weight: 600;
+}
+
+.logo {
+    position: relative;
+    display: block;
+    color: #262524;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.small.nav-menu {
+    position: relative;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(245, 245, 245, 0.95);
+    transition: 0.25s linear;
+    z-index: 9998;
+}
+.navigation.is-open {
+    left: 0;
+}
+.navigation ul {
+    position: unset;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.navigation ul li {
+    position: relative;
+    height: 14vh;
+    border-bottom: 1px solid rgba(68, 68, 68, 0.1);
+}
+.navigation a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: 5px 5px 5px 10px;
+    color: #202020;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: "Comic Sans MS", cursive, sans-serif, "Source Code Pro", monospace;
+}
+.navigation a:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #575757c7;
+    transition: 0.25s;
+    z-index: -1;
+}
+.navigation a:hover {
+    color: whitesmoke;
+}
+.navigation a:hover:before {
+    width: 100%;
+}
+
+.hamburger {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    padding: 0;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    z-index: 9999;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.main-loader {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header */
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.grid-container .grid-x {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.grid-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.grid-container.full {
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.grid-container .grid-x {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.grid-container .grid-x.align-left {
+    justify-content: flex-start;
+}
+.grid-container .grid-x.align-right {
+    justify-content: flex-end;
+}
+.grid-container .grid-x.align-justify {
+    justify-content: space-between;
+}
+.grid-container .grid-x.align-top {
+    align-items: flex-start;
+}
+.grid-container .grid-x.align-bottom {
+    align-items: flex-end;
+}
+.grid-container .grid-x.align-middle {
+    align-items: center;
+}
+.grid-container .grid-x.align-center {
+    align-items: center;
+    justify-content: center;
+}
+.grid-container .grid-x.grid-margin-x .cell {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.grid-container .grid-x.grid-padding-x .cell {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.grid-container .grid-x.grid-margin-y .cell {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.grid-container .grid-x.grid-padding-y .cell {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cell {
+    display: block;
+    width: 100%;
+}
+
+.cell.align-self-right {
+    display: flex;
+    justify-content: flex-end;
+}
+.cell.align-self-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.top-bar .grid-x {
+    flex-wrap: nowrap;
+}
+
+.logo figure  {
+    width: 50px;
+    height: 50px;
+    padding: 4px;
+    margin: 0 0 0 20px;
+    display: inline-block;
+    border: 1px solid black;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 10px #888888;
+}
+
+.logo figure img {
+    width: 40px;
+}
+
+.header-content .logo{
+    align-items: center;
+    display: flex;
+}
+
+.header-content .logo span{
+    margin-left: 12px;
+    font-size: 24px;
+}
+
+
+.main-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu ul li {
+    display: inline;
+}
+
+.main-menu ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 10px;
+    padding: 4px 0;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.main-menu ul a.active {
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* Media section */
+
+@media only screen and (max-width: 600px) {
+    .main-menu {
+        display: none;
+    }
+    .small.nav-menu {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+    }
+}

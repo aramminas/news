@@ -1,0 +1,24 @@
+{
+  "_home_": "** Home **",
+  "home": "Home",
+  "article": "Article",
+  "category": "Category",
+
+  "_contact_us": "** Contact Us **",
+  "contact_us": "Contact us",
+  "cancel": "Cancel",
+  "send": "Send",
+  "site_name": "News",
+  "company_name": "Web Company",
+  "name": "Name",
+  "email": "E-mail",
+  "message": "Message",
+  "error_name": "Name field contains invalid characters!",
+  "error_email": "You entered an invalid email address!",
+  "error_message": "You can't send an empty message!",
+  "error_main": "All fields are required, and need to fill in the correct data!",
+
+  "_404_page": "**Not Found Page**",
+  "message_1": "There's nothing here.",
+  "message_2": "Please return to the main page!"
+}

@@ -1,14 +1,16 @@
-import React from 'react';
+import React, {Component} from 'react';
+import router from './router';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-          <h1>Dev branch</h1>
-      </header>
-    </div>
-  );
+class App extends Component{
+
+    render() {
+        return (
+            <>
+                {router}
+            </>
+        );
+    };
 }
 
 export default App;
