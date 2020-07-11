@@ -3,8 +3,15 @@
   "home": "Home",
   "article": "Article",
   "category": "Category",
+  "latest_news" : "Latest news",
+  "info_about": "info about",
+  "by": "by",
+  "unknown": "unknown",
+  "search_placeholder": "What are you looking for?",
+  "search_article": "Search article",
+  "search": "Search",
 
-  "_contact_us": "** Contact Us **",
+  "_contact_us_": "** Contact Us **",
   "contact_us": "Contact us",
   "cancel": "Cancel",
   "send": "Send",
@@ -18,7 +25,38 @@
   "error_message": "You can't send an empty message!",
   "error_main": "All fields are required, and need to fill in the correct data!",
 
-  "_404_page": "**Not Found Page**",
+  "_404_page_": "** Not Found Page **",
   "message_1": "There's nothing here.",
-  "message_2": "Please return to the main page!"
+  "message_2": "Please return to the main page!",
+
+  "_errors_": "** Error messages **",
+  "error_server_no_data": "Error from the server, no data!",
+  "error_article": "An error occurred while receiving the request!",
+
+  "_warning_": "** Warning messages **",
+  "no_recent_news": "No recent news.",
+  "warning_article_not_found": "This article not found.",
+  "warning_category_not_found": "This category not found.",
+  "warning_search": "Enter the article title to start searching!",
+
+  "_info_": "** Info messages **",
+  "info_please_wait_loading": "Please wait, data is loading ...",
+  "info_data_to_display": "No data to display!",
+
+  "_article_": "** Article **",
+  "article_not_found":"Article not found",
+  "category_not_found":"Category not found",
+  "description": "Description",
+  "content": "Content",
+  "source": "source",
+  "not_found_msg_1": "We couldn't find this article.",
+  "not_found_msg_2": "You can select another article from the list of categories or search for it by entering the article name in the search field.",
+  "not_found_msg_3": "We apologize for any inconvenience caused.",
+  "not_found_cat_msg_1": "We couldn't find this category.",
+  "not_found_cat_msg_2": "You can select another category from the list of categories or search for it by entering the category name in the search field.",
+  "not_found_cat_msg_3": "We apologize for any inconvenience caused.",
+  "title": "title",
+  "author": "author",
+  "published_at": "published at",
+  "similar_articles": "similar articles"
 }

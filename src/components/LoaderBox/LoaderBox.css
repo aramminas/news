@@ -1,0 +1,35 @@
+.loader-root, .empty-result {
+    margin: 50px 0;
+}
+
+.loader-root div.paper, .empty-result  div.paper{
+    box-shadow: 0 0 10px 5px #1f1e1e47;
+}
+
+.loader-content, .empty-result-content {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-text {
+    font-size: 25px;
+    text-shadow: 3px 4px 3px rgba(0,0,0,0.3);
+}
+
+.loader-element {
+    position: absolute;
+    animation: push ease 15s alternate infinite;
+    animation-delay: 3s;
+}
+
+@keyframes push {
+    0% {left: 0; top: 0;}
+    25% {left: 90%; top: 15%;}
+    50% {left: 50%; top: 75%;}
+    75% {left: 20%; top: 65%;}
+    100% {left: 0; top: 0;}
+}

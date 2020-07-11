@@ -1,0 +1,47 @@
+/* Article Item */
+.article-content .root {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.article-content .grid-list {
+    width: auto;
+    height: auto;
+    transform: translateZ(0);
+}
+
+.article-content .title-bar {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0) 100%);
+}
+
+.article-content .icon {
+    color: white;
+}
+
+div.article-description {
+    height: auto;
+    text-align: initial;
+}
+
+div.article-description > div > div {
+    overflow: auto;
+    text-overflow: unset;
+    white-space: inherit;
+}
+
+div.article-description > div > div p span {
+    color: rgb(71, 145, 219);
+}
+
+div.article-description > div > div a {
+    display: flex;
+    align-items: center;
+    color: red;
+    width: 85px;
+}
+div.article-description > div > div a svg{
+    margin-right: 3px;
+}

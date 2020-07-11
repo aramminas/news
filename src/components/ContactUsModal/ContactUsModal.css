@@ -120,12 +120,23 @@ button.btn-default:hover {
 .contact-form input, .contact-form textarea {
     width: 100%;
     max-width: 100%;
+    min-width: 50%;
     padding: 5px;
     font-family: "Comic Sans MS", cursive, sans-serif, "Source Code Pro", monospace;
 }
 
 .contact-form input {
     height: 40px;
+}
+
+.contact-form input, .contact-form textarea {
+    background: #fff;
+    color: #585858;
+    font: inherit;
+    box-shadow: 0 6px 10px 4px rgba(0, 0, 0, 0.19);
+    border: 0;
+    outline: 0;
+    padding: 22px 18px;
 }
 
 span.error-message {

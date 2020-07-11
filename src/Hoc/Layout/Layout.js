@@ -14,7 +14,7 @@ const Layout = (ChildComponent) =>
 
             return (
                 <>
-                    <Header lang={lang}/>
+                    <Header {...rest}/>
                     <ChildComponent
                         {...rest}
                     />
